@@ -4,12 +4,8 @@ module.exports = {
     sourceType: "module",
   },
 
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-  ],
-  plugins: ["@typescript-eslint", "prettier"],
+  extends: ["eslint:recommended", "prettier"],
+  plugins: ["prettier"],
 
   env: {
     es2020: true,
@@ -18,7 +14,6 @@ module.exports = {
   },
 
   rules: {
-    "@typescript-eslint/no-var-requires": "off",
     "prettier/prettier": "error",
   },
 
