@@ -1,6 +1,5 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const nodeExternals = require("webpack-node-externals");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
@@ -10,8 +9,6 @@ const config = {
   mode: "development",
 
   devtool: false,
-
-  externals: [nodeExternals()],
 
   entry: {
     main: "./src/js/main.js",
