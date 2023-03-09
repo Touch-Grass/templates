@@ -1,12 +1,5 @@
-// const CopyWebpackPlugin = require("copy-webpack-plugin");
-// const TerserPlugin = require("terser-webpack-plugin");
-// const nodeExternals = require("webpack-node-externals");
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const ESLintPlugin = require("eslint-webpack-plugin");
-
 import CopyWebpackPlugin from "copy-webpack-plugin";
 import TerserPlugin from "terser-webpack-plugin";
-import nodeExternals from "webpack-node-externals";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import ESLintPlugin from "eslint-webpack-plugin";
 import webpack from "webpack";
@@ -17,8 +10,6 @@ const config: webpack.Configuration = {
   mode: "development",
 
   devtool: false,
-
-  externals: [nodeExternals()],
 
   entry: {
     main: "./src/ts/main.ts",
